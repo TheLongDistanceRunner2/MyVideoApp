@@ -17,7 +17,7 @@ Provide the following credentials generated in your account (log in to the API D
 In this project, I decided to utilize the **MVI (Model-View-Intent)** architecture. This approach allows for a clean separation of business logic from core Android functionality, such as views and navigation. Additionally, it ensures the project follows the most recent recommended architecture patterns for Android development.
 
 The project is divided into two main packages:
-- data: Contains the data sources and logic (including VonageVideoRepository.kt).
+- data: Contains the data sources and logic (including `VonageVideoRepository.kt`).
 - ui: The layer responsible for presenting data and handling user interactions.
 
 The core logic related to the Vonage Video API is encapsulated in: `app/src/main/java/com/example/myvideoapp/data/repository/VonageVideoRepository.kt`
@@ -37,3 +37,4 @@ Since the time spent on the project was relatively short, the app requires sever
 There are also some known issues that require fixing:
 - Handling single-permission grant scenarios (currently not working as intended).
 - A display issue with the video stream of the second person joining the session (this does not occur if the other user is already present in the session).
+Moreover, the problem is connected only with video - the voice is received without any problems.
