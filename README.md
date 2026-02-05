@@ -37,3 +37,4 @@ Since the time spent on the project was relatively short, the app requires sever
 There are also some known issues that require fixing:
 - Handling single-permission grant scenarios (currently not working as intended).
 - A display issue with the video stream of the second person joining the session (this does not occur if the other user is already present in the session).
+Moreover, the problem is connected only with video - the voice is received without any problems.
