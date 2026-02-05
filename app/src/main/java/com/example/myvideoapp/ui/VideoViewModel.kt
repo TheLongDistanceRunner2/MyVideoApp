@@ -38,13 +38,7 @@ class VideoViewModel(application: Application) : AndroidViewModel(application) {
                         isMicrophoneEnabled = connectionState.isMicrophoneEnabled
                     )
                     is ConnectionState.Error -> Disconnected(connectionState.message)
-                    is ConnectionState.Disconnected -> {
-                        if (arePermissionsGranted) {
-                            ReadyToConnect
-                        } else {
-                            PermissionsMissing(showRationale = false)
-                        }
-                    }
+                    is ConnectionState.Disconnected -> Disconnected(connectionState.message)
                     ConnectionState.Idle -> return@onEach
                 }
                 _uiState.value = newState

@@ -59,8 +59,6 @@ class VonageVideoRepository(private val context: Context) {
 
     fun endCall() {
         session?.disconnect()
-        cleanUp()
-        _connectionState.value = ConnectionState.Disconnected("Call ended")
     }
 
     private fun cleanUp() {
@@ -115,6 +113,7 @@ class VonageVideoRepository(private val context: Context) {
 
         override fun onDisconnected(session: Session) {
             Log.d(TAG, "=> onDisconnected: Disconnected from session: ${session.sessionId}")
+            _connectionState.value = ConnectionState.Disconnected("Call ended")
             cleanUp()
         }
 
