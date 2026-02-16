@@ -1,6 +1,12 @@
 # MyVideoApp
 Android app leveraging Vonage Video API for video calls.
 
+<img src="https://github.com/user-attachments/assets/1d59950b-88e8-450b-8bbc-092be50ecddb" width="180" />
+<img src="https://github.com/user-attachments/assets/c5d50d3f-e8e7-4f91-8e76-16c95909299d" width="180" />
+<img src="https://github.com/user-attachments/assets/8f809a16-3446-4862-a14b-9577f5d45ccb" width="180" />
+<img src="https://github.com/user-attachments/assets/0e74a9f4-2c7b-4639-8a30-573192121867" width="180" />
+<img src="https://github.com/user-attachments/assets/a60cdb01-258a-43fa-976c-0c42c3c69439" width="180" />
+
 ## Setup instructions
 This project supports Android devices with SDK v24 and higher.
 
